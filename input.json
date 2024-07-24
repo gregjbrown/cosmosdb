@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "PUT",
+        "path": [
+            "finance",
+            "reports",
+            "q2-2021.pdf"
+        ]
+    },
+    "user": {
+        "id": "alice",
+        "roles": [
+            "reports-admin",
+            "reports-reader"
+        ]
+    }
+}

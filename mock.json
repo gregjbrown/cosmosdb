@@ -1,0 +1,38 @@
+{
+    "mongodb.find_one": {
+        "data": [
+            {
+                "uri": "mongodb://<connection string here>",
+                "database": "permissions",
+                "collection": "resources",
+                "filter": {
+                    "endpoint": "/finance/reports/q2-2021.pdf"
+                },
+                "options": {
+                    "projection": {
+                        "_id": false
+                    }
+                },
+                "result": {
+                    "results": {
+                        "allowAdminRoles": [
+                            "finance-admin",
+                            "reports-admin"
+                        ],
+                        "allowReadRoles": [
+                            "finance-admin",
+                            "reports-admin",
+                            "reports-reader"
+                        ],
+                        "allowWriteRoles": [
+                            "finance-admin",
+                            "reports-admin",
+                            "reports-writer"
+                        ],
+                        "endpoint": "/finance/reports/q2-2021.pdf"
+                    }
+                }
+            }
+        ]
+    }
+}
